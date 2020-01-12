@@ -14,11 +14,15 @@
 
         <!-- Montserrat Google font -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+        <!-- jQuery JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+
     </head>
 
     <body>
         <header>
-            <div class="container-fluid">
+            <div id="test" class="container-fluid">
                 <div class="row">
 
                     <!-- header title -->
@@ -70,6 +74,18 @@
 
             </div>
         </div>
+
+
+        <!-- jQuery Stuff -->
+        <script>
+            $(window).on("scroll", function() {
+
+                var scrollPositionTop = $(window).scrollTop();
+                console.log(scrollPositionTop);
+
+            })
+        
+        </script>
 
 
 

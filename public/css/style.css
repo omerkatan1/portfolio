@@ -13,6 +13,14 @@ header {
     padding-bottom: 30px;
 }
 
+#test {
+    position: fixed;
+}
+
+header.scrolled {
+    background-color: black;
+}
+
 #headerTitle {
     font-weight: 600;
     text-decoration: underline;
@@ -47,6 +55,7 @@ header {
 }
 
 #name-subtext {
+    margin-top: -15px;
     font-size: 16px;
     opacity: 60%;
 }
