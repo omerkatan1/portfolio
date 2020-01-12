@@ -42,7 +42,6 @@
         </header>
 
 
-
         <!-- intro box -->
         <div id="introContainer">
             <p id="name">Omer Katan</p>
@@ -79,16 +78,33 @@
             $(window).on("scroll", function() {
 
                 var scrollPosition = $(window).scrollTop();
-                if (scrollPosition >= 100) {
+                console.log(scrollPosition);
+                if (scrollPosition > 0) {
+                    $( "#headerTitle" ).css( "font-weight", "450" );
                     $( "header" ).css( "background-color", "black" );
                     $( "#headerTitle" ).css( "color", "whitesmoke" );
+                    $( "#headerTitle" ).css( "text-decoration", "none" );
+                    $( "header" ).css( "padding-top", "10px" );
+                    $( "header" ).css( "padding-bottom", "10px" );
+                    $( "header" ).css( "margin-bottom", "40px" );
+                    $( ".arrow" ).css( "display", "none" );
+                    $( "header" ).css( "transition-duration", "0.4s" );
+                    $( "header" ).css( "-webkit-transition-duration", "0.4s" );
 
-                } else if (scrollPosition < 100){
+                } else {
+                    $( "#headerTitle" ).css( "font-weight", "600" );
+                    $( "#headerTitle" ).css( "text-decoration", "underline" );
+                    $( "#headerTitle" ).css( "text-decoration-color", "rgb(158, 60, 60)" );
                     $( "header" ).css( "background-color", "whitesmoke" );
-                    $( "#headerTitle" ).css( "color", "black" );
-
+                    $( "#headerTitle" ).css( "color", "black" );          
+                    $( "header" ).css( "padding-top", "30px" );
+                    $( "header" ).css( "padding-bottom", "30px" );
+                    $( ".arrow" ).css( "display", "inline" );
+                    $( "header" ).css( "transition-duration", "0.4s" );
+                    $( "header" ).css( "-webkit-transition-duration", "0.4s" );
                 }
-                
+            
+
             })
         
         </script>
