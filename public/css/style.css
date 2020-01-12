@@ -13,6 +13,11 @@ header {
     padding-bottom: 30px;
 }
 
+#headerTitle {
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: rgb(158, 60, 60);
+}
 
 /* nav link stuff */
 #navLink-box {
@@ -126,7 +131,7 @@ header {
 
 .arrow {
     position: absolute;
-    bottom: 0;
+    bottom: -25px;
     left: 50%;
     color: black;
     margin-left: -20px;
@@ -158,9 +163,19 @@ header {
     margin-bottom: 50px;
 }
 
+
 #aboutMe-subText {
     font-size: 20px;
-    color: rgb(158, 60, 60);
+    color: white;
+    opacity: 60%;
     margin-left: 40px;
     margin-right: 40px;
+}
+
+#profilePic {
+    margin-left: 20px;
+    height: 380px;
+    width: auto;
+    border-radius: 7px;
+    border: 3px solid rgb(158, 60, 60);
 }
