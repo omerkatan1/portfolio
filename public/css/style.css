@@ -7,18 +7,10 @@ h1 {
 }
 
 header {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
     padding-top: 30px;
     padding-bottom: 30px;
-}
-
-#test {
-    position: fixed;
-}
-
-header.scrolled {
-    background-color: black;
 }
 
 #headerTitle {
@@ -29,6 +21,7 @@ header.scrolled {
 
 /* nav link stuff */
 #navLink-box {
+    padding-top: 7px;
     text-align: center;
 }
 .navLink {
