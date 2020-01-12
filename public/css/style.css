@@ -1,0 +1,16 @@
+header {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+#navLink-div {
+    text-align: center;
+}
+
+.navLink {
+    margin-left: 5px;
+    margin-right: 5px;
+}
