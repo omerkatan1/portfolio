@@ -1,16 +1,48 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
 header {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
 
-
+/* nav link stuff */
 #navLink-box {
     text-align: center;
 }
 .navLink {
-    /* display: inline; */
     margin-left: 40px;
+    color: rgb(158, 158, 158);
+    text-decoration: none;
+}
+.navLink:hover {
+    text-decoration: none;
+    color: rgb(158, 60, 60);
+    transition-duration: 0.2s;
+    -webkit-transition-duration: 0.35s;
+}
+
+#introContainer {
+    margin-top: 100px;
+    margin-bottom: 140px;
+    text-align: center;
+}
+
+#name {
+    font-size: 20px;
+}
+
+#name-subtext {
+    font-size: 20px;
+}
+
+#introText {
+    font-size: 64px;
+    margin-right: 15vw;
+    margin-left: 15vw;
+    margin-bottom: 15vh;
 }
