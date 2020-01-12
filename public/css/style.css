@@ -6,11 +6,11 @@ header {
 }
 
 
-#navLink-div {
+
+#navLink-box {
     text-align: center;
 }
-
 .navLink {
-    margin-left: 5px;
-    margin-right: 5px;
+    /* display: inline; */
+    margin-left: 40px;
 }
