@@ -143,7 +143,7 @@ header {
 
 
 
-
+/* about me area stuff */
 #aboutMeContainer {
     margin-top: 40vh;
     background-color: black;
@@ -155,4 +155,12 @@ header {
 
 #aboutMe-titleText {
     color: whitesmoke;
+    margin-bottom: 50px;
+}
+
+#aboutMe-subText {
+    font-size: 20px;
+    color: rgb(158, 60, 60);
+    margin-left: 40px;
+    margin-right: 40px;
 }
