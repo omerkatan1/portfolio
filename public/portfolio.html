@@ -47,15 +47,38 @@
         </header>
 
 
-        <div id="projectHolder" class="container-fluid">
-            
+        <div class="container-fluid">
+            <div id="projectHolder" class="row">
 
-
+            </div>
         </div>
 
         <script>
             $(document).ready(function() {
-                
+                let portfolioLink = ["https://sqwash.herokuapp.com/"];
+                let portfolioImg = ["assets/images/sqwashIMG.jpg"];
+                let portfolioName = ["Sqwash"];
+
+
+                for(var i = 0; i < portfolioLink.length; i++) {
+                    const projectBox = $("<div>");
+                    projectBox.addClass("col-6");
+                    
+                    const link = $("<a>");
+                    const img = $("<img>");
+                    link.attr("href", portfolioLink[i]);
+                    link.attr("target", "_blank");
+                    img.attr("src", portfolioImg[i]);
+
+                    link.append(img);
+                    projectBox.append(link);
+
+                    const title = $("<h1>");
+                    title.text(portfolioName[i]);
+                    projectBox.append(title);
+
+                    $("#projectHolder").append(projectBox);
+                }
             });
         
         </script>
