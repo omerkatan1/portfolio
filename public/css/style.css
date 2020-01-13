@@ -7,7 +7,7 @@ h1 {
 }
 
 header {
-    /* background-color: rgb(124, 124, 124); */
+    background-color: whitesmoke;
     padding-left: 50px !important;
     padding-right: 50px !important;
     padding-top: 30px;
@@ -207,3 +207,18 @@ header {
 form section div.full { clear: both; }
 form section div label { display: block; }
 form section div input { margin-bottom: 30px; }
+
+
+
+footer {
+    background-color: whitesmoke;
+    border-top: 4px solid rgb(158, 60, 60);
+    /* height: 90px; */
+    text-align: center;
+}
+
+#otherProfiles {
+    position: relative;
+    float: right;
+    bottom: 0px;
+}
