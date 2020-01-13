@@ -187,33 +187,26 @@ header {
 
 
 /* Everything to do with contact box */
-#contactMeContainer {
-    margin-top: 40vh;
-    margin-bottom: 20vh;
-    background-color: rgb(228, 228, 228);
+#contactInfoContainer {
     text-align: center;
-    border-radius: 7px;
+    margin-top: 40vh;
+    margin-bottom: 30vh;
 }
 
-#contactMeTitle {
-    color: rgb(70, 70, 70);
-    text-decoration: underline;
-    text-decoration-color: rgb(158, 60, 60);
-    margin-bottom: 60px;
-    margin-top: 20px;
+#contactSubheader {
+    font-weight: 400;
+    font-size: 18px;
 }
 
-
-form section div.full { clear: both; }
-form section div label { display: block; }
-form section div input { margin-bottom: 30px; }
-
+#contactEmail {
+    font-size: 56px;
+    margin-top: 30px;
+}
 
 
 footer {
-    background-color: whitesmoke;
+    background-color: rgb(226, 226, 226);
     border-top: 4px solid rgb(158, 60, 60);
-    /* height: 90px; */
     text-align: center;
 }
 
