@@ -222,3 +222,7 @@ footer {
     float: right;
     bottom: 0px;
 }
+
+.fa-github {
+    cursor: pointer;
+}
