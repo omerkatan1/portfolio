@@ -55,20 +55,23 @@
 
         <script>
             $(document).ready(function() {
-                let portfolioLink = ["https://sqwash.herokuapp.com/"];
-                let portfolioImg = ["assets/images/sqwashIMG.jpg"];
-                let portfolioName = ["Sqwash"];
+                let portfolioLink = ["https://sqwash.herokuapp.com/", "https://github.com/"];
+                let portfolioImg = ["assets/images/sqwashIMG.jpg", "assets/images/IMG_0204 3.jpg"];
+                let portfolioName = ["Sqwash", "test"];
 
 
                 for(var i = 0; i < portfolioLink.length; i++) {
                     const projectBox = $("<div>");
-                    projectBox.addClass("col-6");
+                    projectBox.addClass("col-lg-6 col-sm-12");
+                    projectBox.addClass("projectBoxStyle");
                     
                     const link = $("<a>");
                     const img = $("<img>");
                     link.attr("href", portfolioLink[i]);
                     link.attr("target", "_blank");
+                    // link.addClass("linkMargins");
                     img.attr("src", portfolioImg[i]);
+                    img.addClass("fitImg");
 
                     link.append(img);
                     projectBox.append(link);
