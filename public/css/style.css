@@ -212,7 +212,7 @@ footer {
 #otherProfiles {
     position: relative;
     float: right;
-    bottom: 0px;
+    margin-right: 50px;
 }
 
 .fa-github {
@@ -237,6 +237,10 @@ footer {
 }
 
 /* portfolio holder stuff */
+#projectHolder {
+    margin-top: 5vh;
+    margin-bottom: 40vh;
+}
 .fitImg {
     width: 45vw;
     height: auto;

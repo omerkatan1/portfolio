@@ -1,109 +1,141 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My Portfolio</title>
-        
-        <!-- links css file -->
-        <link rel="stylesheet" href="css/style.css">
 
-        <!-- bootstrap -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<head>
+    <title>My Portfolio</title>
 
-        <!-- jQuery CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <!-- links css file -->
+    <link rel="stylesheet" href="css/style.css">
 
-        <!-- jQuery logo -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-        <!-- Montserrat Google font -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- jQuery CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 
-        <!-- jQuery JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <!-- jQuery logo -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    </head>
+    <!-- Montserrat Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
+    <!-- jQuery JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
 
-    <body>
-        
-        <header class="container-fluid sticky-top">
-            <div class="row">
-
-                <!-- header title -->
-                <div class="col-3">
-                    <h3 id="headerTitle">My Portfolio</h3>
-                </div>
-
-                <!-- blank space -->
-                <div class="col-5"></div>
-
-                <!-- nav links -->
-                <div id="navLink-box" class="col-4">
-                    <a href="index.html" class="navLink">Home</a>
-                    <a id="myWorkLink" href="" class="navLink">My Work</a>
-                    <a href="" class="navLink">About Me</a>
-                </div>
-            </div>
-        </header>
+</head>
 
 
-        <!-- body of portfolio page -->
-        <div class="container-fluid">
+<body>
 
-            <div class="row">
-                <div id="portfolioHeader" class="col-12">
+    <header class="container-fluid sticky-top">
+        <div class="row">
 
-                    <h1 id="portfolioHeaderText">Here are my projects.</h1>
-                    <p id="portfolioHeaderSubtext">Take a look at what i can do. If your interested in working together my email is at the bottom of this page.</p>
-
-
-
-                </div>
+            <!-- header title -->
+            <div class="col-3">
+                <h3 id="headerTitle">My Portfolio</h3>
             </div>
 
-            <div id="projectHolder" class="row">
+            <!-- blank space -->
+            <div class="col-5"></div>
+
+            <!-- nav links -->
+            <div id="navLink-box" class="col-4">
+                <a href="index.html" class="navLink">Home</a>
+                <a id="myWorkLink" href="" class="navLink">My Work</a>
+                <a href="" class="navLink">About Me</a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- body of portfolio page -->
+    <div class="container-fluid">
+
+        <div class="row">
+            <div id="portfolioHeader" class="col-12">
+
+                <h1 id="portfolioHeaderText">Here are my projects.</h1>
+                <p id="portfolioHeaderSubtext">Take a look at what i can do. If your interested in working together my
+                    email is at the bottom of this page.</p>
+
+
 
             </div>
         </div>
 
-        <script>
-            $(document).ready(function() {
-                $("header").css("position", "relative");
-                $("#myWorkLink").css("color", "rgb(77, 77, 77)")
-                $("#myWorkLink").css("font-weight", "600");
+        <div id="projectHolder" class="row">
+
+        </div>
+    </div>
 
 
-                // portfolio appending stuff
-                let portfolioLink = ["https://sqwash.herokuapp.com/", "https://github.com/"];
-                let portfolioImg = ["assets/images/sqwashIMG.jpg", "assets/images/IMG_0204 3.jpg"];
-                let portfolioName = ["Sqwash", "test"];
+    <!-- Contact Me Container -->
+    <div id="contactInfoContainer">
+        <h1 id="contactHeader">Interested in working together?</h1>
+        <h3 id="contactSubheader">Email me and we can start working. If you have any questions or thoughts, feel free to use this email as well.</h3>
+        <h1 id="contactEmail">omerhkatan@icloud.com</h1>
+    </div>
+
+    <!-- footer -->
+    <footer class="container-fluid">
+        <div class="row">
+
+            <div class="col">
+
+                <p id="copyright">Copyright© 2020</p>
+
+                <div id="otherProfiles">
+                    <a href="https://www.linkedin.com/in/omer-katan-47bb15154/" target="_blank"><i id="linkedIn-btn"
+                            class="fa fa-linkedin-square" style="font-size:37px;"></i></a>
+                    <a href="https://github.com/omerkatan1" target="_blank"><i class="fa fa-github"
+                            style="font-size:37px; margin-left: 10px;"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function () {
+            $("header").css("position", "relative");
+            $("#myWorkLink").css("color", "rgb(77, 77, 77)")
+            $("#myWorkLink").css("font-weight", "600");
 
 
-                for(var i = 0; i < portfolioLink.length; i++) {
-                    const projectBox = $("<div>");
-                    projectBox.addClass("col-lg-6 col-sm-12");
-                    projectBox.addClass("projectBoxStyle");
-                    
-                    const link = $("<a>");
-                    const img = $("<img>");
-                    link.attr("href", portfolioLink[i]);
-                    link.attr("target", "_blank");
-                    // link.addClass("linkMargins");
-                    img.attr("src", portfolioImg[i]);
-                    img.addClass("fitImg");
+            // portfolio appending stuff
+            let portfolioLink = ["https://sqwash.herokuapp.com/", "https://omerkatan1.github.io/project-1/"];
+            let portfolioImg = ["assets/images/sqwashIMG.jpg", "assets/images/RouteMappers.jpg"];
+            let portfolioName = ["Sqwash", "RouteMappers"];
 
-                    link.append(img);
-                    projectBox.append(link);
 
-                    const title = $("<h1>");
-                    title.text(portfolioName[i]);
-                    projectBox.append(title);
+            for (var i = 0; i < portfolioLink.length; i++) {
+                const projectBox = $("<div>");
+                projectBox.addClass("col-lg-6 col-sm-12");
+                projectBox.addClass("projectBoxStyle");
 
-                    $("#projectHolder").append(projectBox);
-                }
-            });
-        
-        </script>
+                const link = $("<a>");
+                const img = $("<img>");
+                link.attr("href", portfolioLink[i]);
+                link.attr("target", "_blank");
+                // link.addClass("linkMargins");
+                img.attr("src", portfolioImg[i]);
+                img.addClass("fitImg");
 
-    </body>
+                link.append(img);
+                projectBox.append(link);
+
+                const title = $("<h1>");
+                title.text(portfolioName[i]);
+                projectBox.append(title);
+
+                $("#projectHolder").append(projectBox);
+            }
+        });
+
+    </script>
+
+</body>
+
 </html>
