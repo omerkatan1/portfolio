@@ -7,7 +7,6 @@ h1 {
 }
 
 header {
-    background-color: whitesmoke;
     padding-left: 50px !important;
     padding-right: 50px !important;
     padding-top: 30px;
@@ -220,6 +219,24 @@ footer {
     cursor: pointer;
 }
 
+
+/* portfolio stuff */
+#portfolioHeader {
+    margin-top: 15vh;
+    margin-bottom: 25vh;
+}
+
+#portfolioHeaderText {
+    font-size: 64px;
+    margin-left: 10vw;
+}
+
+#portfolioHeaderSubtext {
+    font-size: 20px;
+    margin-left: 15vw;
+}
+
+/* portfolio holder stuff */
 .fitImg {
     width: 45vw;
     height: auto;

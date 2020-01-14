@@ -39,7 +39,7 @@
 
                 <!-- nav links -->
                 <div id="navLink-box" class="col-4">
-                    <a href="" class="navLink">Home</a>
+                    <a href="index.html" class="navLink">Home</a>
                     <a href="" class="navLink">My Work</a>
                     <a href="" class="navLink">About Me</a>
                 </div>
@@ -47,7 +47,20 @@
         </header>
 
 
+        <!-- body of portfolio page -->
         <div class="container-fluid">
+
+            <div class="row">
+                <div id="portfolioHeader" class="col-12">
+
+                    <h1 id="portfolioHeaderText">Here are my projects.</h1>
+                    <p id="portfolioHeaderSubtext">Take a look at what i can do. If your interested in working together my email is at the bottom of this page.</p>
+
+
+
+                </div>
+            </div>
+
             <div id="projectHolder" class="row">
 
             </div>
@@ -55,6 +68,10 @@
 
         <script>
             $(document).ready(function() {
+                $("header").css("position", "relative");
+
+
+                // portfolio appending stuff
                 let portfolioLink = ["https://sqwash.herokuapp.com/", "https://github.com/"];
                 let portfolioImg = ["assets/images/sqwashIMG.jpg", "assets/images/IMG_0204 3.jpg"];
                 let portfolioName = ["Sqwash", "test"];
