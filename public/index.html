@@ -37,9 +37,9 @@
 
                     <!-- nav links -->
                     <div id="navLink-box" class="col-4">
-                        <a href="" class="navLink">Home</a>
-                        <a href="portfolio.html" class="navLink">My Work</a>
-                        <a href="#aboutMeContainer" class="navLink">About Me</a>
+                        <a id="homeLink" href="" class="navLink">Home</a>
+                        <a id="myWorkLink" href="portfolio.html" class="navLink">My Work</a>
+                        <a id="aboutMeLink" href="#aboutMeContainer" class="navLink">About Me</a>
                     </div>
                 </div>
         </header>
@@ -107,6 +107,12 @@
 
         <!-- jQuery Stuff -->
         <script>
+
+            $("#homeLink").css("color", "rgb(77, 77, 77)")
+            $("#homeLink").css("font-weight", "600");
+
+
+            // scroll stuff
             $(window).on("scroll", function() {
 
                 var scrollPosition = $(window).scrollTop();
