@@ -222,13 +222,19 @@ footer {
 
 /* portfolio stuff */
 #portfolioHeader {
-    margin-top: 15vh;
-    margin-bottom: 25vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    padding: 60px;
+    height: 275px;
+    color: white;
+    background-color: black;
 }
 
 #portfolioHeaderText {
     font-size: 64px;
     margin-left: 10vw;
+    text-decoration: underline;
+    text-decoration-color: rgb(158, 60, 60);
 }
 
 #portfolioHeaderSubtext {
@@ -239,7 +245,7 @@ footer {
 /* portfolio holder stuff */
 #projectHolder {
     margin-top: 5vh;
-    margin-bottom: 40vh;
+    margin-bottom: 70vh;
 }
 .fitImg {
     width: 45vw;
